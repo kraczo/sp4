@@ -1,0 +1,662 @@
+/*
+Theme Name: Sp4
+Theme URI: http://sp4bilgoraj.pl
+Author: Kraczowski Dawid
+Author URI: http://kraczo.2ap.pl
+Description: Projekt wykonany na zlecenie Pani Moniki Bednarz dla Szko�y podstawowej nr 4 w Bi�goraju.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: sp4
+*/
+
+
+body {
+  margin:0 !important;
+  padding:0 !important;
+  background:url(images/paper.png) repeat;
+  scrollbar-face-color :#a5c4cd;
+  scrollbar-highlight-color :#84b3c1;
+  scrollbar-3dlight-color :#84b3c1;
+  scrollbar-shadow-color :#84b3c1;
+  scrollbar-darkshadow-color :#84b3c1;
+  scrollbar-track-color :#d7eef4;
+  scrollbar-arrow-color :#000;
+  }
+.bar {
+  height:38px;
+  background:url(images/headerbg.jpg);
+  margin:0;
+  padding:0;
+}
+#bar_wrapper {
+  margin:0 auto;
+  width:960px;
+  
+}
+#name_bar, #date_bar {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  margin-left:6px;
+  margin-top:9px;
+  float:left;
+  font-size:15px;
+  color: #EEE;
+  letter-spacing:0.1em;
+}
+#date_bar {
+  float:right;
+}
+.wrap {
+  margin:0 auto;
+  width:960px;
+}
+.head_box {
+  width:960px;
+  height:266px;
+  float:left;
+  margin-top:6px;
+  margin-bottom:3px;
+}
+
+
+ .more-link  {
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  position: relative;
+  margin: 0;
+  padding: 0 10px 0 14px;
+  background:#005B00;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none; 
+    -moz-border-radius:8px;
+  -webkit-border-radius:8px;
+  border-radius:8px;
+  
+  /* A 1px highlight inside of the button */
+  
+  -moz-box-shadow:0 0 1px #fff inset;
+  -webkit-box-shadow:0 0 1px #fff inset;
+  box-shadow:0 0 1px #fff inset;
+} 
+
+.more-link a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -12px;
+  width: 0;
+  height: 0;
+  border-color: transparent transparent transparent #0ac92b;
+  border-style: solid;
+  border-width: 12px 0 12px 12px;  
+}
+
+.more-link a:hover {
+  background: #555;
+}
+
+.more-link a:hover:after {
+  border-color: transparent transparent transparent #555;
+}
+#picture_box
+{
+  background:url(images/40_lat_sp4.jpg);
+  box-shadow: 0 10px 20px rgba( 0, 0, 0, 0.3 );
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border-color: #0C0;
+  border-style:solid;
+  border-width: 0.4mm;
+  float:left;
+  width:274px;
+  height:260px;
+
+}
+#slider {
+  background-color: #DBDBDB;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border-color: #0C0;
+  border-style:solid;
+  border-width: 0.4mm;
+  width:668px;
+  float:left;
+  height:260px;
+  margin-left:11px;
+}
+
+.container {
+  width:960px;
+  overflow:auto;
+   height:auto;
+  margin-top:10px;
+
+}
+.left_side_menu {
+  width:205px;
+  float:left;
+  overflow:hidden;
+   height:auto;
+display:table;
+}
+#nasza_szkola_header {
+  width:205px;
+  height:40px;
+  background:url(images/menu_nasza_szkola/menu_01.png);
+}
+ul.menu_01 {
+  float:left;
+  margin:0;
+  padding:0;
+}
+.left_side_menu  ul li {
+
+font:16px Calibri, Arial, sans-serif;
+width:128px;
+  /* A semi-transparent text shadow */
+  text-shadow:1px 1px 0 rgba(255,255,255,0.4);
+  
+  /* Overriding the default underline styling of the links */
+  text-decoration:none !important;
+  white-space:nowrap;
+  
+  display:inline-block;
+  vertical-align:baseline;
+  position:relative;
+  cursor:pointer;
+  padding:6px 20px;
+  margin-bottom:1px;
+  
+  background-repeat:no-repeat;
+
+  /* The following two rules are fallbacks, in case
+     the browser does not support multiple backgrounds. */
+
+  background-position:bottom left;
+  background-image:url('button_bg.png');
+  
+  /* Multiple backgrounds version. The background images
+     are defined individually in color classes */
+  
+  background-position:bottom left, top right, 0 0, 0 0;
+  background-clip:border-box;
+  
+  /* Applying a default border raidus of 8px */
+  
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;
+  border-radius:8px;
+  
+  /* A 1px highlight inside of the button */
+  
+  -moz-box-shadow:0 0 1px #fff inset;
+  -webkit-box-shadow:0 0 1px #fff inset;
+  box-shadow:0 0 1px #fff inset;
+  
+  /* Animating the background positions with CSS3 */
+  /* Currently works only in Safari/Chrome */
+  
+  -webkit-transition:background-position 1s;
+  -moz-transition:background-position 1s;
+  transition:background-position 1s;
+  color: #000; !important;
+  border:1px solid #96a37b !important;  
+  background-color: #79be1e;
+  background-image:url('button_bg.png'), url('button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(162,211,30,1) 0,rgba(162,211,30,0) 100px),-moz-linear-gradient(#82cc27, #74b317);
+  background-image:url('button_bg.png'), url('button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(162,211,30,1)), to(rgba(162,211,30,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#82cc27), to(#74b317));
+  text-align:center;
+  }
+
+.left_side_menu li:hover {
+  /* The first rule is a fallback, in case the browser
+     does not support multiple backgrounds
+  */
+  background-color:#89d228;
+  
+  background-image:url('button_bg.png'), url('button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(183,229,45,1) 0,rgba(183,229,45,0) 100px),-moz-linear-gradient(#90de31, #7fc01e);
+  background-image:url('button_bg.png'), url('button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(183,229,45,1)), to(rgba(183,229,45,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#90de31), to(#7fc01e));
+  background-position:top left;
+  background-position:top left, bottom right, 0 0, 0 0;
+}
+.left_side_menu a {
+text-decoration:none;
+line-height:8px;
+color:#000;
+}
+
+ul.menu_02 {
+  margin:16px 0 0 0;
+  float:left;
+  padding:0;
+}
+
+
+.right_side_menu {
+  margin-left:10px;
+  width: 152px; 
+  float:left;
+  overflow: hidden;
+   height:auto;
+}
+.right_side_menu  ul {
+  padding:0;
+  margin:0;
+}
+#menu-item-49 {
+  font:13px Calibri, Arial, sans-serif;
+  padding:12px 2px;
+  width:116px;
+  letter-spacing:-0.0625em;
+}
+#menu-item-73 {
+  font:15px Calibri, Arial, sans-serif;
+  padding:12px 1px;
+  width:116px;
+  letter-spacing:-0.0625em;
+}
+#menu-item-52 {
+
+  padding:12px 1px;
+  width:116px;
+  letter-spacing:-0.0225em;
+}
+.right_side_menu  ul li {
+width:92px;
+  /* A semi-transparent text shadow */
+  text-shadow:1px 1px 0 rgba(255,255,255,0.4);
+  font:14px Calibri, Arial, sans-serif;
+  /* Overriding the default underline styling of the links */
+  text-decoration:none !important;
+  white-space:nowrap;
+  
+  display:inline-block;
+  vertical-align:baseline;
+  position:relative;
+  cursor:pointer;
+  padding:8px 14px;
+  margin-bottom:1px;
+  
+  background-repeat:no-repeat;
+
+  /* The following two rules are fallbacks, in case
+     the browser does not support multiple backgrounds. */
+
+  background-position:bottom left;
+  background-image:url('button_bg.png');
+  
+  /* Multiple backgrounds version. The background images
+     are defined individually in color classes */
+  
+  background-position:bottom left, top right, 0 0, 0 0;
+  background-clip:border-box;
+  
+  /* Applying a default border raidus of 8px */
+  
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;
+  border-radius:8px;
+  
+  /* A 1px highlight inside of the button */
+  
+  -moz-box-shadow:0 0 1px #fff inset;
+  -webkit-box-shadow:0 0 1px #fff inset;
+  box-shadow:0 0 1px #fff inset;
+  
+  /* Animating the background positions with CSS3 */
+  /* Currently works only in Safari/Chrome */
+  
+  -webkit-transition:background-position 1s;
+  -moz-transition:background-position 1s;
+  transition:background-position 1s;
+  color: #000; !important;
+  border:1px solid #96a37b !important;  
+  background-color: #79be1e;
+  background-image:url('button_bg.png'), url('button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(162,211,30,1) 0,rgba(162,211,30,0) 100px),-moz-linear-gradient(#82cc27, #74b317);
+  background-image:url('button_bg.png'), url('button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(162,211,30,1)), to(rgba(162,211,30,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#82cc27), to(#74b317));
+  text-align:center;
+
+  }
+
+.right_side_menu li:hover {
+  /* The first rule is a fallback, in case the browser
+     does not support multiple backgrounds
+  */
+  background-color:#89d228;
+  
+  background-image:url('button_bg.png'), url('button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(183,229,45,1) 0,rgba(183,229,45,0) 100px),-moz-linear-gradient(#90de31, #7fc01e);
+  background-image:url('button_bg.png'), url('button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(183,229,45,1)), to(rgba(183,229,45,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#90de31), to(#7fc01e));
+  background-position:top left;
+  background-position:top left, bottom right, 0 0, 0 0;
+}
+.right_side_menu a {
+text-decoration:none;
+line-height:6px;
+color:#000;
+}
+ul.menu3_buttony {
+margin:0;
+  float:left;
+  padding:0;
+}
+ul li.buttony_3 {
+  display:block;
+  text-indent:-9999px;
+  float:left;
+  width:152px;
+  float:left;
+
+
+}
+#zielona__szkola {
+  height:30px;
+  background:url(images/zielona_szkola.png);
+}
+#orlik__ {
+  height:30px;
+  background:url(images/orlik.png);
+  margin-top:8px;
+  }
+#gazeta__czworeczka {
+  height:30px;
+  background:url(images/gazeta_czworeczka.png);
+  margin-top:8px;
+  }
+.menu_tradycje_szkoly {
+  margin-top:10px;  
+  text-decoration:none;
+  display:block;
+  text-indent:-9999px;
+  list-style:none;
+  float:left;
+  width:152px;
+  padding:0;
+}
+
+ul li.tradycje_szkoly{
+  display:block;
+  text-indent:-9999px;
+  float:left;
+  width:152px;
+}
+
+  
+.footer {
+    background:url(images/footerbg.png);
+    height:38px;
+    clear:both;
+    margin-top:10px;
+
+}
+#name_footer {
+  float:left;
+  color:#FFF;
+  margin-left:6px;
+  margin-top:8px;
+  font-size:16px;
+  color: #EEE;
+  letter-spacing:0.1em;
+  line-height: 22px;
+
+}
+.footer_wrapper {
+  margin:0 auto;
+  width:960px;
+}
+#picture_box_01{
+  margin-top:8px;
+  background-color: #DBDBDB;
+
+  width:148px;
+  float:left;
+}
+#picture_box_02{
+    margin-top:8px;
+  background-color: #DBDBDB;
+  width:148px;
+  float:left;
+}
+#picture_box_03{
+    margin-top:8px;
+  background-color: #DBDBDB;
+  width:148px;
+  float:left;
+}
+#picture_box_04{
+    margin-top:8px;
+  background-color: #DBDBDB;
+  width:148px;
+  float:left;
+}
+.navi_line_list {
+  margin-left:36px;
+  margin-top:7px;
+}
+.navi_line_list a{
+  float:left;
+  text-decoration:none;
+  list-style-type: none;
+  display:inline;
+    color:#333;
+}
+.navi_line_list a:hover{ 
+  color: #000;
+}
+.navi_line {
+  float:left;
+  width:960px;
+  height:31px;
+  font-size:16px;
+  margin-bottom:10px;
+}
+#navi_01 {
+  width:285px;
+  height:31px;
+  background:url(images/navi_pasek/navi_pasek_12.png) no-repeat;
+  float:left;
+}
+#navi_02 {
+  width:344px;
+  height:31px;
+  background:url(images/navi_pasek/navi_pasek_13.png) no-repeat;
+    float:left;
+}
+#navi_03 {
+  width:182px;
+  height:31px;
+  background:url(images/navi_pasek/navi_pasek_14.png) no-repeat;
+    float:left;
+}
+#navi_04 {
+  width:40px;
+  height:31px;
+  background:url(images/navi_pasek/navi_pasek_07.png) no-repeat top;
+    float:left;
+}
+#navi_05 {
+  width:36px;
+  height:31px;
+  background:url(images/navi_pasek/navi_pasek_08.png) no-repeat top;
+    float:left;
+}
+#navi_06 {
+  width:69px;
+  height:31px;
+  background:url(images/navi_pasek/navi_pasek_09.png) no-repeat top;
+    float:left;
+}
+      #wrapper {
+        border: 10px solid rgba( 255, 255, 255, 0.5 );
+          -moz-border-radius: 10px;
+  border-radius: 10px;
+        box-shadow: 0 10px 20px rgba( 0, 0, 0, 0.3 );
+        width: 648px;
+        height: 240px;
+        position:relative;
+
+
+      }
+      #carousel img {
+        float: left;
+      }
+
+      #timer,
+      #play {
+        position:absolute;
+        top: 120px;
+        left: 328px;
+        z-index: 2;
+        opacity: 0.2;
+        transition: opacity 0.5s ease;
+
+      }
+
+      #timer {
+        position:relative;
+        width: 150px;
+        height: 150px;
+        left:252px;
+        top:-200px;
+      }
+      #timer .top,
+      #timer .bottom {
+        width: 150px;
+        height: 75px;
+        overflow: hidden;
+      }
+      #timer .bottom img {
+        margin-top: -76px;
+        transform: rotate(180deg);
+      }
+
+      #play {
+        border: 20px solid transparent;
+        border-left: 30px solid #fff;      
+        width: 0;
+        height: 0;
+        margin: -20px 0 0 -10px;
+      }
+      #play.paused {
+        border: 10px solid #fff;
+        border-top: none;
+        border-bottom: none;
+        width: 10px;
+        height: 36px;
+        margin: -18px 0 0 -14px;
+      }
+      #wrapper:hover #timer,
+      #wrapper:hover #play {
+        opacity: 0.7;
+      }
+      ::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+.content_box {
+  background:#FFF;
+  box-shadow: 0 10px 20px rgba( 0, 0, 0, 0.3 );
+  border-radius: 6px;
+  border-color: #0C0;
+  border-style:solid;
+  border-width: 0.4mm;
+  margin-left:7px;
+  width:568px;
+  max-width:568px;  
+  float:left;
+  height:1100px;
+  overflow:auto;
+  padding-right:14px;
+}
+#post_info {
+  font-size:12px;
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-style:italic;
+
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image:      -o-linear-gradient(left, #ccc, #333, #ccc); 
+}
+#content_tresc {
+  overflow: hidden;
+  padding-left:18px;
+  background-color:#FFF;
+}
+h3 {
+  color: #004600;
+}
+.bubble ul {
+  margin:0;
+  padding:0;
+}
+.bubble li {
+  margin:0;
+  padding:0;
+  text-decoration:none;
+  list-style:none;
+}
+.aktualnosci_box {
+  width:500px;
+  margin-left:10px;
+}
+hr.style-six {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+#date {
+  float:left;
+  font-size:13px;
+}
+#googlebutton {
+  height:64px;
+  width:64px;
+  position:fixed;
+  left:0px;
+  top:120px;
+  display:block;
+  cursor:pointer;
+}
+#facebookbutton {
+  height:64px;
+  width:64px;
+  position:fixed;
+  left:0px;
+  top:170px;
+  display:block;
+  cursor:pointer;
+}
+#info {
+float:right; 
+font-size:16px; 
+display:inline;
+padding-left:10px;
+color:#EEE;
+line-height:0px;
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.cycloneslider-caption-title {
+float:left;
+font-size:18px;
+}
+#info  ul li{
+display:inline;
+padding-left:7px;
+}
